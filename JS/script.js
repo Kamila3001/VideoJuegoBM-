@@ -3,9 +3,9 @@ document.addEventListener("DOMContentLoaded", () => {
   const scenes = [
     { title: "🌿 Sendero", text: "Comienzas tu aventura...", boss: null },
     { title: "🦊 Zaruk", text: "Un zorro guardián te reta.", boss: { name: "Zaruk", hp: 35, item: "Flor del Alba", img:"image/zaruk.jpg" } },
-    { title: "🌫️ Bosque Profundo", text: "La oscuridad murmura...", boss: { name: "Tharnak", hp: 50, item: "Raíz Silenciosa", img:"image/Tharnak.jpg" } },
-    { title: "🧮 Espejo del Alma", text: "Una ilusión surge...", boss: { name: "Zirel", hp: 70, item: "Lágrima Cristal", img:"image/Zirel.jpg" } },
-    { title: "💀 Último Eco", text: "El jefe final aparece...", boss: { name: "Volgor", hp: 100, item: "Alma Nocturna", img:"image/Volgo.jpg" } },
+    { title: "🌫️ Bosque Profundo", text: "La oscuridad murmura...", boss: { name: "Tharnak", hp: 50, item: "Raíz Silenciosa", img:"image/tharnak.jpg" } },
+    { title: "🧮 Espejo del Alma", text: "Una ilusión surge...", boss: { name: "Zirel", hp: 70, item: "Lágrima Cristal", img:"image/zirel.jpg" } },
+    { title: "💀 Último Eco", text: "El jefe final aparece...", boss: { name: "Volgor", hp: 100, item: "Alma Nocturna", img:"image/volgo.jpg" } },
     { title: "🌞 Amanecer", text: "La paz regresa al bosque.", boss: null }
   ];
 
