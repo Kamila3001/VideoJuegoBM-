@@ -1,0 +1,159 @@
+/* Estilo general */
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Press Start 2P', cursive;
+  background-color: #000; /* Fondo negro total */
+  color: #fff;
+  box-sizing: border-box;
+}
+
+/* Ajuste para evitar que HUD tape contenido */
+#juego {
+  padding-bottom: 160px;
+}
+
+/* Contenedor escena principal */
+.escena {
+  max-width: 850px;
+  margin: 30px auto;
+  padding: 25px 20px 60px;
+  background: rgba(0, 0, 0, 0.9);
+  border: 3px solid #86b169;
+  border-radius: 12px;
+  text-align: center;
+  min-height: 300px;
+  position: relative;
+  overflow: hidden;
+}
+
+/* Títulos */
+h1, h2 {
+  color: #ffe69c;
+  text-shadow: 2px 2px #000;
+  margin-bottom: 15px;
+}
+
+/* Párrafos */
+p {
+  font-size: 14px;
+  margin: 10px auto;
+  text-shadow: 1px 1px #000;
+  line-height: 1.5;
+}
+
+/* Botones generales */
+button {
+  background: #3c5537;
+  border: 2px solid #fff;
+  color: #fff;
+  padding: 10px 20px;
+  font-size: 12px;
+  border-radius: 6px;
+  cursor: pointer;
+  margin: 10px auto;
+  display: inline-block;
+  transition: background 0.3s;
+}
+
+button:hover {
+  background: #5a7d4c;
+}
+
+button:disabled {
+  background: #555;
+  cursor: not-allowed;
+}
+
+/* HUD del jugador (fijo abajo) */
+#hud {
+  display: grid;
+  grid-template-columns: 1fr 2fr 1fr;
+  background: rgba(0, 0, 0, 0.95);
+  border-top: 2px solid #86b169;
+  padding: 12px 10px;
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  font-size: 11px;
+  z-index: 100;
+  box-shadow: 0 -2px 8px rgba(0,0,0,0.7);
+}
+
+.col {
+  text-align: center;
+  padding: 5px;
+}
+
+/* Barras de vida */
+.barra-contenedor {
+  background: #2f3e23;
+  border: 2px solid #8bc34a;
+  border-radius: 10px;
+  overflow: hidden;
+  width: 100%;
+  max-width: 140px;
+  height: 18px;
+  margin: 6px auto;
+}
+
+#vidaJugador, #bossVida {
+  background: #8bc34a;
+  height: 100%;
+  text-align: center;
+  font-size: 11px;
+  color: #000;
+  font-weight: bold;
+  line-height: 18px;
+  transition: width 0.3s ease;
+}
+
+/* Zona de combate */
+#zonaCombate {
+  margin-top: 20px;
+  padding-bottom: 30px;
+}
+
+#acciones {
+  margin: 15px 0;
+}
+
+#msgCombate {
+  margin-top: 10px;
+  min-height: 40px;
+}
+
+/* Botón de siguiente escena */
+#btnNext {
+  margin-top: 15px;
+  display: none;
+}
+
+/* Imágenes */
+.personaje-hud img {
+  height: 60px;
+  margin-top: 5px;
+}
+
+.imagen-boss {
+  height: 80px;
+  margin: 10px auto 0;
+  display: block;
+  border-radius: 8px;
+  border: 2px solid #fff;
+}
+
+/* Mejor estética en resumen y progreso */
+#resumen {
+  margin-top: 20px;
+  font-size: 13px;
+  line-height: 1.6;
+  text-shadow: 1px 1px #000;
+}
+
+#barraProgreso {
+  margin: 10px auto;
+  font-size: 12px;
+  color: #c1ffb7;
+  text-shadow: 1px 1px #000;
+}

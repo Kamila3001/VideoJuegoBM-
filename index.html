@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>El Bosque Místico</title>
+  <link rel="stylesheet" href="CSS/style.css"/>
+  <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet"/>
+</head>
+<body>
+
+  <!-- INTRO -->
+  <section id="intro" class="escena activa">
+    <h1>🌲 El Bosque Místico 🌲</h1>
+    <p>La oscuridad cubre el bosque. Recolecta ingredientes y vence a los guardianes.</p>
+    <button id="btnStart">Comenzar Aventura</button>
+  </section>
+
+  <!-- PROGRESO -->
+  <div id="progreso" style="display:none; text-align:center; margin-top:10px;">
+    <p id="barraProgreso">Progreso: 0/5</p>
+  </div>
+
+  <!-- JUEGO -->
+  <main id="juego" style="display:none;">
+    <section id="escena" class="escena">
+      <h2 id="tituloEsc">Título</h2>
+      <p id="textoEsc">Texto de escena</p>
+
+      <div id="zonaCombate" style="display:none;">
+        <img id="imgBoss" src="" alt="Boss" class="imagen-boss"/>
+        <div id="infoBoss">
+          <strong id="bossName">Enemigo</strong>
+          <div class="barra-contenedor"><div id="bossVida">100%</div></div>
+        </div>
+        <div id="acciones">
+          <button id="btnAtacar">Atacar ⚔️</button>
+          <button id="btnEsquivar">Esquivar 🌀</button>
+          <button id="btnBloquear">Bloquear 🛡️</button>
+        </div>
+        <p id="msgCombate" class="msg-combate"></p>
+      </div>
+
+      <button id="btnNext" style="display:none;">➡️ Siguiente</button>
+    </section>
+  </main>
+
+  <!-- HUD -->
+  <footer id="hud" style="display:none;">
+    <div class="col personaje-hud">
+      <img id="imgProtagonista" src="Image/Principal.jpg" alt="Protagonista" />
+    </div>
+    <div class="col">
+      <strong>Vida:</strong>
+      <div class="barra-contenedor"><div id="vidaJugador">100%</div></div>
+    </div>
+    <div class="col" id="msgHUD">Aventúrate...</div>
+    <div class="col">
+      <strong>Ingredientes:</strong>
+      <ul id="inventario"></ul>
+    </div>
+  </footer>
+
+  <!-- FIN -->
+  <section id="fin" class="escena" style="display:none;">
+    <h2 id="msgFin">Fin del juego</h2>
+    <div id="resumen"></div>
+    <button id="btnRetry">Reintentar</button>
+  </section>
+
+  <!-- Audios -->
+  <audio id="musica" src="Audio/banda-sonora.mp3" loop></audio>
+  <audio id="sfxAtk" src="Audio/Ataque.mp3"></audio>
+  <audio id="sfxHit" src=""></audio>
+  <audio id="sfxEsq" src=""></audio>
+  <audio id="sfxBloq" src="Audio/Bloquear.mp3"></audio>
+  <audio id="sfxWin" src=""></audio>
+  <audio id="sfxLose" src="Audio/Lose.mp3"></audio>
+
+  <script src="JS/script.js"></script>
+</body>
+</html>
